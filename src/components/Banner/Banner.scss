@@ -1,0 +1,326 @@
+@import '../../App.css';
+
+/* Адаптация для экранов выше 1920px */
+.Banner {
+    position: relative;
+    border-bottom: 1px solid rgba(65, 65, 63, 1);
+    .Banner__wrapper {
+        width: 100%;
+        height: 100%;
+        max-width: 1920px;
+        // max-width: 100vw;
+        margin: 0 auto;
+        // border: 1px solid orange;
+        .Banner__container {
+            width: 100%;
+            height: 100%;
+            padding: 7.5rem 0;
+            .Banner__Content {
+                width: 100%;
+                // max-width: 1540px;
+                max-width: 80.2083vw;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1.25rem;
+                // border: 1px solid yellow;
+                .content-left {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+
+                    .description {
+                        font-size: 1.125rem;
+                        margin-bottom: 1.5rem;
+                        color: var(--color-gold);
+                        letter-spacing: -0.01em;
+                        text-transform: uppercase;
+                    }
+                    .title {
+                        max-width: 840px;
+                        max-width: 43.75vw;
+                        font-size: 4rem;
+                        margin-bottom: 3.5rem;
+                        line-height: 1;
+                    }
+                    .cta {
+                        padding: 1.75rem 3.625rem;
+                        background-color: var(--color-gold);
+                        cursor: pointer;
+                    }
+                }
+
+                .content-right {
+                    .main-img-wrapper {
+                        position: relative;
+                        max-width: 546px;
+                        aspect-ratio: 546/720;
+                        object-fit: cover;
+                        overflow: hidden;
+                        .main-img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .main-img-wrapper::after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        inset: 0;
+                        z-index: 100;
+                        background: 
+                            linear-gradient(to bottom, rgba(0,0,0,0) 80%, #1D1D1B 100%),
+                            linear-gradient(to right, rgba(0,0,0,0) 85%, #1D1D1B 100%),
+                            linear-gradient(to left, rgba(0,0,0,0) 95%, #1D1D1B 100%)
+                        ;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 1440px до 1920px */
+@media (max-width: 1919.98px) {
+    .Banner {
+        .Banner__wrapper {
+            max-width: 100vw;
+            // border: 1px solid red;
+            .Banner__container {
+                padding: 5.5rem 0;
+                .Banner__Content {
+                    max-width: 80vw;
+                    gap: 1rem;
+                    // border: 1px solid green;
+                    .content-left {
+                        .description {
+                            margin-bottom: 1rem;
+                        }
+                        .title {
+                            // border: 1px solid yellow;
+                            max-width: 45vw;
+                            font-size: 4rem;
+                            line-height: 1;
+                            margin-bottom: 2rem;
+                        }
+                        .cta {
+                            padding: 1.5rem 2.5rem;
+                        }
+                    }
+                    .content-right {
+                        .main-img-wrapper {
+                            // max-width: 545px;
+                            max-width: 28.4378vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 1366px до 1440px */
+@media (max-width: 1439.98px) {
+    .Banner {
+        .Banner__wrapper {
+            max-width: 100vw;
+            .Banner__container {
+                padding: 3.25rem 0;
+                .Banner__Content {
+                    max-width: 78.5714vw;
+                    gap: 1rem;
+                    .content-left {
+                        .description {
+                            margin-bottom: 1rem;
+                        }
+                        .title {
+                            max-width: 680px;
+                            font-size: 3.5rem;
+                            line-height: 1;
+                            margin-bottom: 2rem;
+                        }
+                        .cta {
+                            padding: 1.25rem 2.25rem;
+                        }
+                    }
+                    .content-right {
+                        .main-img-wrapper {
+                            max-width: 28.4378vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 1280px до 1366px */
+@media (max-width: 1365.98px) {
+    .Banner {
+        .Banner__wrapper {
+            max-width: 100vw;
+            .Banner__container {
+                padding: 2.5rem 0;
+                .Banner__Content {
+                    max-width: 79.5019vw;
+                    gap: 1rem;
+                    .content-left {
+                        .description {
+                            margin-bottom: 0.6rem;
+                        }
+                        .title {
+                            max-width: 46.8528vw;
+                            font-size: 3rem;
+                            line-height: 1;
+                            margin-bottom: 1.5rem;
+                        }
+                        .cta {
+                            padding: 16px 35px;
+                        }
+                    }
+                    .content-right {
+                        .main-img-wrapper {
+                            max-width: 28.4378vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 1024px до 1280px */
+@media (max-width: 1279.98px) {
+    .Banner {
+        .Banner__wrapper {
+            max-width: 100vw;
+            .Banner__container {
+                padding: 1rem 0 0.5rem;
+                .Banner__Content {
+                    max-width: 84.3748vw;
+                    gap: 1rem;
+                    flex-direction: column-reverse;
+
+                    .content-left {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transform: translateY(-35%);
+                        z-index: 200;
+                        .description {
+                            margin-bottom: 1rem;
+                            font-size: 1rem;
+                        }
+                        .title {
+                            text-align: center;
+                            max-width: 40vw;
+                            font-size: 2.5rem;
+                            line-height: 1;
+                            margin-bottom: 1.5rem;
+                        }
+                        .cta {
+                            padding: 1rem 1.75rem;
+                        }
+                    }
+                    .content-right {
+                        .main-img-wrapper {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 768px до 1024px */
+@media (max-width: 1023.98px) {
+    .Banner {
+        .Banner__wrapper {
+            max-width: 100vw;
+            .Banner__container {
+                padding: 1rem 0 0.5rem;
+                .Banner__Content {
+                    max-width: 88.281vw;
+                    gap: 1rem;
+                    flex-direction: column-reverse;
+
+                    .content-left {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transform: translateY(-30%);
+                        z-index: 200;
+                        .description {
+                            margin-bottom: 1rem;
+                        }
+                        .title {
+                            text-align: center;
+                            max-width: 57vw;
+                            font-size: 2rem;
+                            line-height: 1;
+                            margin-bottom: 1.5rem;
+                        }
+                        .cta {
+                            padding: 1rem 1.75rem;
+                        }
+                    }
+                    .content-right {
+                        .main-img-wrapper {
+                            max-width: 28.4378vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 414px до 768px */
+@media (max-width: 767.98px) {
+    .Banner {
+        .Banner__wrapper {
+            max-width: 100vw;
+            .Banner__container {
+                padding: 1rem 0 0.5rem;
+                .Banner__Content {
+                    max-width: 84.2444vw;
+                    gap: 1rem;
+                    flex-direction: column-reverse;
+
+                    .content-left {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transform: translateY(-30%);
+                        z-index: 200;
+                        .description {
+                            margin-bottom: 0.5rem;
+                            font-size: 0.65rem;
+                        }
+                        .title {
+                            text-align: center;
+                            max-width: 40.3355vw;
+                            font-size: 1.2rem;
+                            line-height: 0.9;
+                            margin-bottom: 1rem;
+                        }
+                        .cta {
+                            padding: 0.75rem 1.25rem;
+                            font-size: 0.75rem;
+                        }
+                    }
+                    .content-right {
+                        .main-img-wrapper {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

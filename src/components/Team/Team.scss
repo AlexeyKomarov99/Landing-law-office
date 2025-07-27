@@ -1,0 +1,71 @@
+@import '../../App.css';
+.Team {
+    padding-top: 40px;
+    .Team__wrapper {
+        width: 100%;
+        height: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        .Team__container {
+            width: 100%;
+            height: 100%;
+            .Team__content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .Team__title {
+                    margin-bottom: 56px;
+                }
+                .Team__group {
+                    display: flex;
+                    align-items: flex-start;
+                    .Team__item {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        max-width: 398px;
+                        .Team__photo-wrapper {
+                            width: 265px;
+                            height: 265px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 1000%;
+                            overflow: hidden;
+                            background: 
+                                linear-gradient(to bottom, rgba(29, 29, 27, 0), rgba(29, 29, 27, 1)),
+                                rgba(156, 156, 155, 0.14);
+                            
+                            .Team__photo {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: center top;
+                            }
+                            .Team__icon {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        .Team__descr {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            transform: translateY(-30%);
+                            .Team__profession {   
+                                color: var(--color-light-gray);
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
