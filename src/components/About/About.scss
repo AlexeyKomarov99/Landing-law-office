@@ -5,12 +5,12 @@
     .About__wrapper {
         width: 100%;
         height: 100%;
-        max-width: 1128px;
+        max-width: 1600px;
         margin: 0 auto;
         .About__container {
             width: 100%;
             height: 100%;
-            padding: 96px 56px 82px 118px;
+            padding: 6rem 3.5rem 5.125rem 7.375rem;
             background-color: var(--color-middle-gray);
             border-radius: var(--border-radius);
             .About__Content {
@@ -18,21 +18,22 @@
                 display: flex;
                 justify-content: start;
                 align-items: center;
+                gap: 5rem;
 
                 .content-left {
-                    margin-right: 80px;
                     .content-left-cirle {
                         position: relative;
-                        width: 272px;
-                        height: 272px;
+                        width: 320px;
+                        height: 320px;
                         background: linear-gradient(168.47deg, #DCA45C 10.95%, #21211F 87.93%);
                         border-radius: 1000px;
                         .content-left-statue {
-                            // border: 1px solid yellow;
+                            width: 340px;
+                            height: 470px;
                             position: absolute;
                             top: 0;
                             left: 0;
-                            transform: translate(0%,-22%);
+                            transform: translate(0%,-20%);
                             z-index: 100;
                         }
                     }
@@ -44,13 +45,15 @@
                     justify-content: start;
                     align-items: start;
                     .title {
-                        margin-bottom: 24px;
+                        font-size: 3rem;
+                        margin-bottom: 1.5rem;
                     }
                     .description {
+                        font-size: 1.25rem;
                         letter-spacing: -0.01em;
+                        line-height: 1.5;
                     }
                 }
-
             }
         }
     }
@@ -60,23 +63,202 @@
 @media (max-width: 1919.98px) {
     .About {
         .About__wrapper {
-            max-width: 100vw;
+            max-width: 90%;
             .About__container {
                 .About__Content {
-                    max-width: 80vw;
+                    
                     .content-left {
                         .content-left-cirle {
+                            width: 272px;
+                            height: 272px;
                             .content-left-statue {
-
+                                width: 284px;
+                                height: 416px;
+                                transform: translate(1%,-22%);
                             }
                         }
                     }
                     .content-right {
                         .title {
-
+                            font-size: 2.5rem;
                         }
                         .description {
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
+/* Адаптация для экранов от 1366px до 1440px */
+@media (max-width: 1439.98px) {
+    .About {
+
+        .About__wrapper {
+            max-width: 90%;
+            .About__container {
+                padding: 4rem 3rem 4rem 6rem;
+                .About__Content {
+
+                    .content-left {
+                        .content-left-cirle {
+                            width: 250px;
+                            height: 250px;
+                            .content-left-statue {
+                                width: 244px;
+                                height: 336px;
+                                transform: translate(6%,-18%); 
+                            }
+                        }
+                    }
+                    .content-right {
+                        .title {
+                            font-size: 2.5rem;
+                        }
+                        .description {
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 1280px до 1366px */
+@media (max-width: 1365.98px) {
+    .About {
+        .About__wrapper {
+            max-width: 90%;
+            .About__container {
+                .About__Content {
+
+                    .content-left {
+                        .content-left-cirle {
+                            .content-left-statue {
+                            }
+                        }
+                    }
+                    .content-right {
+                        .title {
+                            font-size: 2rem;
+                        }
+                        .description {
+                            font-size: 1.125rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 1024px до 1280px */
+@media (max-width: 1279.98px) {
+    .About {
+        .About__wrapper {
+            max-width: 95%;
+            .About__container {
+                padding: 3.25rem 2rem 3.25rem 5rem;
+                .About__Content {
+                    gap: 4rem;
+                    .content-left {
+                        .content-left-cirle {
+                            .content-left-statue {
+                                transform: translate(4%,-15%); 
+                            }
+                        }
+                    }
+                    .content-right {
+                        .title {
+                            font-size: 2rem;
+                        }
+                        .description {
+                            font-size: 1.125rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 768px до 1024px */
+@media (max-width: 1023.98px) {
+    .About {
+        .About__wrapper {
+            max-width: 100%;
+            padding: 0 1rem;
+            .About__container {
+                padding: 4rem 2rem;
+                .About__Content {
+                    gap: 3rem;
+                    .content-left {
+                        .content-left-cirle {
+                            width: 272px;
+                            height: 272px;
+                            .content-left-statue {
+                                width: 284px;
+                                height: 376px;
+                                transform: translate(1%,-16%); 
+                            }
+                        }
+                    }
+                    .content-right {
+                        .title {
+                            font-size: 2rem;
+                        }
+                        .description {
+                            font-size: 1.125rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 414px до 768px */
+@media (max-width: 767.98px) {
+    .About {
+        .About__wrapper {
+            max-width: 100%;
+            padding: 0 1rem;
+            .About__container {
+                padding: 2rem 1.5rem;
+                .About__Content {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2rem;
+                    .content-left {
+                        margin: 2rem 0 1rem;
+                        .content-left-cirle {
+                            width: 250px;
+                            height: 250px;
+                            .content-left-statue {
+                                width: 244px;
+                                height: 336px;
+                                transform: translate(1%,-16%); 
+                            }
+                        }
+                    }
+                    .content-right {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .title {
+                            font-size: 2rem;
+                            margin-bottom: 0.5rem;
+                        }
+                        .description {
+                            font-size: 1rem;
                         }
                     }
                 }

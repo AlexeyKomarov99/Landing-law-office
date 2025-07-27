@@ -2,23 +2,18 @@
 
 /* Адаптация для экранов от 1920px и выше */
 .Advantages {
-    padding-bottom: 56px;
+    padding-bottom: 3.5rem;
     border-bottom: 1px solid var(--border-color);
     .Advantages__wrapper {
         width: 100%;
         height: 100%;
-        // max-width: 1920px;
-        max-width: 100vw;
+        max-width: 1600px;
         margin: 0 auto;
         .Advantages__container {
             width: 100%;
             height: 100%;
             .Advantages__Content {
                 width: 100%;
-                // max-width: 816px;
-                max-width: 42.5004vw;
-                border: 1px solid red;
-                margin: 0 auto;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -27,7 +22,7 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    width: 13.3335vw;
+                    width: 16.125rem;
                     .advantage-icon-wrapper {
                         width: 124px;
                         height: 124px;
@@ -46,6 +41,7 @@
                     }
                     .advantage-descr {
                         text-align: center;
+                        font-size: 1rem;
                     }
                 }
             }
@@ -56,7 +52,7 @@
 /* Адаптация для экранов от 1440px до 1920px */
 @media (max-width: 1919.98px) {
     .Advantages__wrapper {
-        // max-width: 100vw;
+        max-width: 90%;
         .Advantages__container {
             .Advantages__Content {
 
@@ -68,6 +64,78 @@
                     }
                     .advantage-descr {
 
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 1366px до 1440px */
+@media (max-width: 1439.98px) {
+    .Advantages__wrapper {
+        max-width: 90%;
+        .Advantages__container {
+            .Advantages__Content {
+
+                .content-item {
+                    .advantage-icon-wrapper {
+                        .advantage-icon {
+
+                        }
+                    }
+                    .advantage-descr {
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 1280px до 1366px */
+@media (max-width: 1365.98px) {
+    .Advantages__wrapper {
+        max-width: 90%;
+    }
+}
+
+/* Адаптация для экранов от 1024px до 1280px */
+@media (max-width: 1279.98px) {
+    .Advantages__wrapper {
+        max-width: 95%;
+    }
+}
+
+/* Адаптация для экранов от 768px до 1024px */
+@media (max-width: 1023.98px) {
+    .Advantages__wrapper {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+/* Адаптация для экранов от 414px до 768px */
+@media (max-width: 767.98px) {
+    .Advantages {
+        .Advantages__wrapper {
+            max-width: 100%;
+            padding: 0 0.5rem;
+            .Advantages__container {
+                .Advantages__Content {
+    
+                    .content-item {
+                        .advantage-icon-wrapper {
+                            width: 92px;
+                            height: 92px;
+                            .advantage-icon {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .advantage-descr {
+                            font-size: 0.8rem;
+                        }
                     }
                 }
             }

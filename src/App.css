@@ -42,18 +42,24 @@
 body {
   font-family: 'Inter', sans-serif;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 16px;
   background-color: var(--color-dark-gray);
   color: var(--color-white);
 }
 
+.App {
+  position: relative;
+}
+
+/* Адаптация для экранов от 1440px до 1920px */
 h1 {
-  font-size: 2.8rem;
+  font-size: 3.5rem;
   font-weight: 500;
+  letter-spacing: -0.01em;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 500;
   letter-spacing: -0.01em;
   color: var(--color-gold);
@@ -68,9 +74,5 @@ h3 {
 
 section {
   width: 100%;
-  margin-bottom: 2.8rem;
-}
-
-.App {
-  position: relative;
+  margin-bottom: 3.5rem;
 }
