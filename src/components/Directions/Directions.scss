@@ -1,25 +1,28 @@
 @import '../../App.css';
+
+/* Адаптация для экранов выше 1920px */
 .Directions {
     .Directions__wrapper {
         width: 100%;
         height: 100%;
-        max-width: 1440px;
+        max-width: 1600px;
         margin: 0 auto;
         .Directions__container {
             width: 100%;
             height: 100%;
             .Directions__Content {
                 width: 100%;
-                max-width: 936px;
+                max-width: 1000px;
                 margin: 0 auto;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                border: 1px solid green;
 
                 .Directions__title {
                     color: var(--white);
-                    margin-bottom: 56px;
+                    margin-bottom: 3.5rem;
                 }
 
                 .Directions__group {
@@ -28,12 +31,12 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    margin-bottom: 32px;
+                    margin-bottom: 2rem;
                     .Directions__item {
                         width: 100%;
                         display: flex;
                         flex-direction: column;
-                        padding: 16px 0;
+                        padding: 1rem 0;
                         border-bottom: 1px solid rgba(65, 65, 63, 1);
                         border-top: 1px solid rgba(65, 65, 63, 1);
                         user-select: none;
@@ -46,6 +49,7 @@
                             align-items: center;
 
                             .item-title {
+                                font-size: 1.25rem;
                                 color: var(--color-light-gray);
                             }
                             .active-title {
@@ -80,10 +84,11 @@
                             justify-content: start;
                             align-items: start;
                             list-style-type: disc;
-                            padding-left: 32px;
+                            padding-left: 2rem;
                             .Directions__internal-item {
+                                font-size: 1rem;
                                 color: var(--color-light-gray);
-                                padding: 4px 0;
+                                padding: 0.25rem 0;
                                 opacity: 0;
                                 transform: translateY(-10px);
                                 transition: all 0.2s ease;
@@ -106,20 +111,103 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    padding: 34px 96px;
+                    padding: 2.125rem 6rem;
                     background-color: var(--color-middle-gray);
-                    border-radius: 56px;
+                    border-radius: 3.5rem;
                     .Directions__contact-descr {
                         color: var(--color-light-gray);
+                        font-size: 1.25rem;
                     }
                     .Directions__btn-call {
                         background-color: var(--color-gold);
-                        padding: 20px 80px;
-                        font-size: 20px;
+                        padding: 1.25rem 5rem;
+                        font-size: 1.25rem;
                         color: var(--color-white);
                         border: 0;
                         user-select: none;
                         cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 1440px до 1920px */
+@media (max-width: 1919.98px) {
+    .Directions {
+        .Directions__wrapper {
+            max-width: 90%;
+        }
+    }
+}
+
+/* Адаптация для экранов от 1366px до 1440px */
+@media (max-width: 1439.98px) {
+    .Directions {
+        .Directions__wrapper {
+            max-width: 90%;
+        }
+    }
+}
+
+/* Адаптация для экранов от 1280px до 1366px */
+@media (max-width: 1365.98px) {
+    .Directions {
+        .Directions__wrapper {
+            max-width: 90%;
+        }
+    }
+}
+
+/* Адаптация для экранов от 1024px до 1280px */
+@media (max-width: 1279.98px) {
+    .Directions {
+        .Directions__wrapper {
+            max-width: 95%;
+            .Directions__container {
+                .Directions__Content {
+                    .Directions__title {
+
+                    }
+                    .Directions__group {
+                        .Directions__item {
+                            .Directions__external-content {
+                                .item-title {
+
+                                }
+                                .active-title {
+
+                                }
+                                .item-icon-wrapper {
+                                    .item-icon {
+
+                                    }
+                                    .active-icon {
+
+                                    }
+                                }
+                            }
+                            .Directions__internal-container {
+
+                            }
+                            .Directions__internal-content {
+                                .Directions__internal-item {
+
+                                }
+                            }
+                            .active {
+
+                            }
+                        }
+                    }
+                    .Directions__contact-us {
+                        .Directions__contact-descr {
+
+                        }
+                        .Directions__btn-call {
+                            font-size: 1.25rem;
+                        }
                     }
                 }
             }
