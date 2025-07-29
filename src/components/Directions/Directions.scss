@@ -18,7 +18,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                border: 1px solid green;
+                // border: 1px solid green;
 
                 .Directions__title {
                     color: var(--white);
@@ -49,7 +49,7 @@
                             align-items: center;
 
                             .item-title {
-                                font-size: 1.25rem;
+                                font-size: 1.5rem;
                                 color: var(--color-light-gray);
                             }
                             .active-title {
@@ -84,9 +84,9 @@
                             justify-content: start;
                             align-items: start;
                             list-style-type: disc;
-                            padding-left: 2rem;
+                            padding-left: 2.5rem;
                             .Directions__internal-item {
-                                font-size: 1rem;
+                                font-size: 1.25rem;
                                 color: var(--color-light-gray);
                                 padding: 0.25rem 0;
                                 opacity: 0;
@@ -137,7 +137,7 @@
 @media (max-width: 1919.98px) {
     .Directions {
         .Directions__wrapper {
-            max-width: 90%;
+            width: 90%;
         }
     }
 }
@@ -146,7 +146,7 @@
 @media (max-width: 1439.98px) {
     .Directions {
         .Directions__wrapper {
-            max-width: 90%;
+            width: 90%;
         }
     }
 }
@@ -155,7 +155,37 @@
 @media (max-width: 1365.98px) {
     .Directions {
         .Directions__wrapper {
-            max-width: 90%;
+            width: 90%;
+            .Directions__container {
+                .Directions__Content {
+                    max-width: 850px;
+                    .Directions__title {
+                        font-size: 2rem;
+                    }
+                    .Directions__group {
+                        .Directions__item {
+                            .Directions__external-content {
+                                .item-title {
+                                    font-size: 1.375rem;
+                                }
+                            }
+                            .Directions__internal-content {
+                                .Directions__internal-item {
+                                    font-size: 1.125rem;
+                                }
+                            }
+                        }
+                    }
+                    .Directions__contact-us {
+                        .Directions__contact-descr {
+                            font-size: 1.125rem;
+                        }
+                        .Directions__btn-call {
+                            font-size: 1.125rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -164,17 +194,44 @@
 @media (max-width: 1279.98px) {
     .Directions {
         .Directions__wrapper {
-            max-width: 95%;
+            width: 95%;
+        }
+    }
+}
+
+/* Адаптация для экранов от 768px до 1024px */
+@media (max-width: 1023.98px) {
+    .Directions {
+        .Directions__wrapper {
+            width: 100%;
+            padding: 0 2rem;
+            .Directions__container {
+                .Directions__Content {
+                    max-width: 800px;
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 414px до 768px */
+@media (max-width: 767.98px) {
+    .Directions {
+        // border: 1px solid red;
+        .Directions__wrapper {
+            width: 100%;
+            padding: 0 2.5rem;
             .Directions__container {
                 .Directions__Content {
                     .Directions__title {
-
+                        text-align: center;
+                        font-size: 2rem;
                     }
                     .Directions__group {
                         .Directions__item {
                             .Directions__external-content {
                                 .item-title {
-
+                                    font-size: 1.25rem;
                                 }
                                 .active-title {
 
@@ -193,7 +250,7 @@
                             }
                             .Directions__internal-content {
                                 .Directions__internal-item {
-
+                                    font-size: 1rem;
                                 }
                             }
                             .active {
@@ -202,11 +259,16 @@
                         }
                     }
                     .Directions__contact-us {
+                        flex-direction: column;
+                        padding: 1rem 6rem;
                         .Directions__contact-descr {
-
+                            margin-bottom: 1rem;
+                            font-size: 1rem;
                         }
                         .Directions__btn-call {
-                            font-size: 1.25rem;
+                            background-color: var(--color-gold);
+                            padding: 1rem 5rem;
+                            font-size: 1rem;
                         }
                     }
                 }

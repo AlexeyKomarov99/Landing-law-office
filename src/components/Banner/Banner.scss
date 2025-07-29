@@ -258,9 +258,9 @@
     .Banner {
         .Banner__wrapper {
             width: 100%;
-            padding: 0 0.5rem;
+            padding: 0 1rem;
             .Banner__container {
-                padding: 3rem 0 3rem;
+                padding: 2rem 0 2rem;
                 .Banner__Content {
                     gap: 1rem;
                     flex-direction: column-reverse;
@@ -288,6 +288,7 @@
                     }
                     .content-right {
                         .main-img-wrapper {
+                            max-width: 350px;
                         }
                     }
                 }

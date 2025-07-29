@@ -1,31 +1,38 @@
 @import '../../App.css';
+
+/* Адаптация для экранов выше 1920px */
 .Team {
-    padding-top: 40px;
+    padding-top: 2.5rem;
     .Team__wrapper {
         width: 100%;
         height: 100%;
-        max-width: 1440px;
+        max-width: 1600px;
         margin: 0 auto;
         .Team__container {
             width: 100%;
             height: 100%;
             .Team__content {
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                // border: 1px solid red;
                 .Team__title {
-                    margin-bottom: 56px;
+                    margin-bottom: 3.5rem;
                 }
                 .Team__group {
+                    height: 100%;
                     display: flex;
-                    align-items: flex-start;
+                    align-items: stretch;
                     .Team__item {
+                        width: 100%;
                         display: flex;
                         flex-direction: column;
-                        justify-content: center;
+                        justify-content: start;
                         align-items: center;
-                        max-width: 398px;
+                        max-width: 25rem;
+                        // border: 1px solid yellow;
                         .Team__photo-wrapper {
                             width: 265px;
                             height: 265px;
@@ -57,10 +64,163 @@
                             justify-content: center;
                             align-items: center;
                             text-align: center;
-                            transform: translateY(-30%);
-                            .Team__profession {   
+                            margin-top: -35px;
+                            // border: 1px solid green;
+                            .Team__name {
+                                font-size: 2rem;
+                                margin-bottom: 0.5rem;
+                            }
+                            .Team__profession {
                                 color: var(--color-light-gray);
 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 1440px до 1920px */
+@media (max-width: 1919.98px) {
+    .Team {
+        .Team__wrapper {
+            width: 90%;
+        }
+    }
+}
+
+/* Адаптация для экранов от 1366px до 1440px */
+@media (max-width: 1439.98px) {
+    .Team {
+        .Team__wrapper {
+            width: 90%;
+        }
+    }
+}
+
+/* Адаптация для экранов от 1280px до 1366px */
+@media (max-width: 1439.98px) {
+    .Team {
+        .Team__wrapper {
+            width: 90%;
+            .Team__container {
+                .Team__content {
+                    .Team__title {
+                        font-size: 2rem;
+                        margin-bottom: 1.5rem;
+                    }
+                    .Team__group {
+                        .Team__item {
+                            .Team__photo-wrapper {
+                                width: 245px;
+                                height: 245px;
+                                .Team__photo {
+
+                                }
+                                .Team__icon {
+
+                                }
+                            }
+                            .Team__descr {
+                                .Team__name {
+                                    font-size: 1.5rem;
+                                }
+                                .Team__profession {
+                                    font-size: 1.125rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 1024px до 1280px */
+@media (max-width: 1279.98px) {
+    .Team {
+        .Team__wrapper {
+            width: 95%;
+        }
+    }
+}
+
+/* Адаптация для экранов от 768px до 1024px */
+@media (max-width: 1023.98px) {
+    .Team {
+        .Team__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Team__container {
+                .Team__content {
+                    .Team__title {
+                        font-size: 2rem;
+                        margin-bottom: 1.5rem;
+                    }
+                    .Team__group {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-gap: 0.5rem;
+                        .Team__item {
+                            .Team__photo-wrapper {
+                                width: 220px;
+                                height: 220px;
+                            }
+                            .Team__descr {
+                                .Team__name {
+                                    font-size: 1.5rem;
+                                }
+                                .Team__profession {
+                                    font-size: 1.125rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 414px до 768px */
+@media (max-width: 1023.98px) {
+    .Team {
+        margin-bottom: 2rem;
+        padding-top: 0;
+        .Team__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Team__container {
+                .Team__content {
+                    .Team__title {
+                        font-size: 2rem;
+                        margin-bottom: 1.5rem;
+                    }
+                    .Team__group {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2rem;
+                        .Team__item {
+                            .Team__photo-wrapper {
+                                width: 200px;
+                                height: 200px;
+                                .Team__photo {
+
+                                }
+                                .Team__icon {
+
+                                }
+                            }
+                            .Team__descr {
+                                .Team__name {
+                                    font-size: 1.5rem;
+                                }
+                                .Team__profession {
+                                    font-size: 1.125rem;
+                                }
                             }
                         }
                     }
