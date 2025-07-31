@@ -14,9 +14,9 @@ const MapComponent = () => {
   return (
     <section 
       className='MapComponent'
-      style={{ width: "100%", height: "500px", paddingBottom: '68px'}}
+      // style={{ width: "100%", height: "500px", paddingBottom: '68px'}}
     >
-      <YMaps query={{ apikey: process.env.REACT_APP_YANDEX_MAPS_API_KEY }}>
+      <YMaps className='test' query={{ apikey: process.env.REACT_APP_YANDEX_MAPS_API_KEY }}>
         <Map defaultState={defaultState} width="100%" height="100%">
           <Placemark geometry={defaultState.center} />
         </Map>

@@ -1,14 +1,16 @@
 @import '../../App.css';
+
+/* Адаптация для экранов выше 1920px */
 .Footer {
     .Footer__wrapper {
         width: 100%;
         height: 100%;
-        max-width: 1440px;
+        max-width: 1660px;
         margin: 0 auto;
         .Footer__container {
             width: 100%;
             height: 100%;
-            padding: 26px 0 32px;
+            padding: 1.625rem 0 2rem;
             .Footer__content {
                 width: 100%;
                 height: 100%;
@@ -22,37 +24,38 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: start;
-                    margin-bottom: 43px;
+                    margin-bottom: 2.6875rem;
+                    gap: 2rem;
                     .content-left {
                         display: flex;
                         flex-direction: column;
                         justify-content: start;
                         align-items: start;
                         :nth-child(n):not(:last-child) {
-                            margin-bottom: 8px;
+                            margin-bottom: 0.5rem;
                         }
                         .Footer__address {
                             letter-spacing: -0.01em;
                         }
                         .Footer__metro-descr {
-                            font-size: 12.5px;
+                            font-size: 1rem;
                             letter-spacing: -0.01em;
                             color: rgba(104, 104, 103, 1);
                         }
-                        .Footer_metro {
+                        .Footer__metro {
                             display: flex;
                             flex-direction: row;
                             justify-content: start;
                             align-items: start;
                             .Footer__circle {
-                                width: 14px;
-                                height: 14px;
+                                width: 16px;
+                                height: 16px;
                                 border-radius: 1000%;
                                 background-color: var(--color-indigo);
-                                margin-right: 8px;
+                                margin-right: 0.5rem;
                             }
                             .Footer__metro-name {
-                                font-size: 12.5px;
+                                font-size: 1rem;
                                 letter-spacing: -0.01em;
                                 color: var(--color-indigo);
                             }
@@ -62,7 +65,7 @@
                         display: flex;
                         flex-direction: column;
                         :nth-child(n):not(:last-child) {
-                            margin-bottom: 8px;
+                            margin-bottom: 0.5rem;
                         }
                         .Footer__phone {
                             letter-spacing: -0.01em;
@@ -78,18 +81,349 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: start;
+                    gap: 2rem;
                     .law-office {
-                        font-size: 16px;
+                        font-size: 1rem;
                         letter-spacing: -0.01em;
                         color: rgba(65, 65, 63, 1);
                     }
                     .policy {
-                        font-size: 16px;
+                        font-size: 1rem;
                         letter-spacing: -0.01em;
                         color: rgba(65, 65, 63, 1);
                     }
                 }
 
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 1440px до 1920px */
+@media (max-width: 1920px) {
+    .Footer {
+        .Footer__wrapper {
+            width: 90%;
+            .Footer__container {
+                .Footer__content {
+                    .Footer__content-header {
+                        .content-left {
+                            .Footer__address {
+
+                            }
+                            .Footer__metro-descr {
+
+                            }
+                            .Footer__metro {
+                                .Footer__circle {
+
+                                }
+                                .Footer__metro-name {
+
+                                }
+                            }
+                        }
+                        .content-right {
+
+                        }
+                    }
+                    .Footer__content-footer {
+                        .law-office {
+
+                        }
+                        .policy {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 1366px до 1440px */
+@media (max-width: 1440px) {
+    .Footer {
+        .Footer__wrapper {
+            width: 90%;
+            .Footer__container {
+                .Footer__content {
+                    .Footer__content-header {
+                        .content-left {
+                            .Footer__address {
+
+                            }
+                            .Footer__metro-descr {
+
+                            }
+                            .Footer__metro {
+                                .Footer__circle {
+
+                                }
+                                .Footer__metro-name {
+
+                                }
+                            }
+                        }
+                        .content-right {
+
+                        }
+                    }
+                    .Footer__content-footer {
+                        .law-office {
+
+                        }
+                        .policy {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 1280px до 1366px */
+@media (max-width: 1366px) {
+    .Footer {
+        .Footer__wrapper {
+            width: 90%;
+            .Footer__container {
+                .Footer__content {
+                    .Footer__content-header {
+                        .content-left {
+                            .Footer__address {
+
+                            }
+                            .Footer__metro-descr {
+
+                            }
+                            .Footer__metro {
+                                .Footer__circle {
+
+                                }
+                                .Footer__metro-name {
+
+                                }
+                            }
+                        }
+                        .content-right {
+
+                        }
+                    }
+                    .Footer__content-footer {
+                        .law-office {
+
+                        }
+                        .policy {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 1024px до 1280px */
+@media (max-width: 1280px) {
+    .Footer {
+        .Footer__wrapper {
+            width: 95%;
+            .Footer__container {
+                .Footer__content {
+                    .Footer__content-header {
+                        .content-left {
+                            .Footer__address {
+
+                            }
+                            .Footer__metro-descr {
+
+                            }
+                            .Footer__metro {
+                                .Footer__circle {
+
+                                }
+                                .Footer__metro-name {
+
+                                }
+                            }
+                        }
+                        .content-right {
+
+                        }
+                    }
+                    .Footer__content-footer {
+                        .law-office {
+
+                        }
+                        .policy {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 768px до 1024px */
+@media (max-width: 1024px) {
+    .Footer {
+        .Footer__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Footer__container {
+                padding: 0.5rem 0 2rem;
+                .Footer__content {
+                    .Footer__content-header {
+                        .content-left {
+                            .Footer__address {
+                                font-size: 1.375rem;
+                            }
+                            .Footer__metro-descr {
+                                font-size: 0.875rem;
+                            }
+                            .Footer__metro {
+                                .Footer__circle {
+                                    width: 14px;
+                                    height: 14px;
+                                }
+                                .Footer__metro-name {
+                                    font-size: 0.875rem;
+                                }
+                            }
+                        }
+                        .content-right {
+                            .Footer__phone {
+                                font-size: 1.375rem;
+                            }
+                            .Footer__email {
+                                font-size: 1.375rem;
+                            }
+                        }
+                    }
+                    .Footer__content-footer {
+                        .law-office {
+                            font-size: 0.875rem;
+                            max-width: 350px;
+                        }
+                        .policy {
+                            font-size: 0.875rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 576px до 768px */
+@media (max-width: 768px) {
+    .Footer {
+        .Footer__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Footer__container {
+                .Footer__content {
+                    .Footer__content-header {
+                        .content-left {
+                            .Footer__address {
+                                font-size: 1.25rem;
+                            }
+                            .Footer__metro-descr {
+                                font-size: 0.875rem;
+                            }
+                            .Footer__metro {
+                                .Footer__circle {
+                                    width: 14px;
+                                    height: 14px;
+                                }
+                                .Footer__metro-name {
+                                    font-size: 0.875rem;
+                                }
+                            }
+                        }
+                        .content-right {
+                            .Footer__phone {
+                                font-size: 1.25rem;
+                            }
+                            .Footer__email {
+                                font-size: 1.25rem;
+                            }
+                        }
+                    }
+                    .Footer__content-footer {
+                        .law-office {
+                            font-size: 0.875rem;
+                            max-width: 300px;
+                        }
+                        .policy {
+                            font-size: 0.875rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 320px до 576px */
+@media (max-width: 576px) {
+    .Footer {
+        .Footer__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Footer__container {
+                .Footer__content {
+                    justify-content: start;
+                    align-items: start;
+                    .Footer__content-header {
+                        flex-direction: column;
+                        justify-content: start;
+                        align-items: start;
+                        margin-bottom: 1.5rem;
+                        gap: 1rem;
+                        .content-left {
+                            .Footer__address {
+                                font-size: 1.25rem;
+                            }
+                            .Footer__metro-descr {
+                                font-size: 0.875rem;
+                            }
+                            .Footer__metro {
+                                .Footer__circle {
+                                    width: 14px;
+                                    height: 14px;
+                                }
+                                .Footer__metro-name {
+                                    font-size: 0.875rem;
+                                }
+                            }
+                        }
+                        .content-right {
+                            .Footer__phone {
+                                font-size: 1.25rem;
+                            }
+                            .Footer__email {
+                                font-size: 1.25rem;
+                            }
+                        }
+                    }
+                    .Footer__content-footer {
+                        flex-direction: column;
+                        justify-content: start;
+                        gap: 0.25rem;
+                        .law-office {
+                            font-size: 0.875rem;
+                            max-width: 100%;
+                        }
+                        .policy {
+                            font-size: 0.875rem;
+                            max-width: 100%;
+                        }
+                    }
+                }
             }
         }
     }

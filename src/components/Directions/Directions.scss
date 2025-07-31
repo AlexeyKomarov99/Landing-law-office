@@ -134,7 +134,7 @@
 }
 
 /* Адаптация для экранов от 1440px до 1920px */
-@media (max-width: 1919.98px) {
+@media (max-width: 1920px) {
     .Directions {
         .Directions__wrapper {
             width: 90%;
@@ -143,7 +143,7 @@
 }
 
 /* Адаптация для экранов от 1366px до 1440px */
-@media (max-width: 1439.98px) {
+@media (max-width: 1440px) {
     .Directions {
         .Directions__wrapper {
             width: 90%;
@@ -152,7 +152,7 @@
 }
 
 /* Адаптация для экранов от 1280px до 1366px */
-@media (max-width: 1365.98px) {
+@media (max-width: 1366px) {
     .Directions {
         .Directions__wrapper {
             width: 90%;
@@ -191,7 +191,7 @@
 }
 
 /* Адаптация для экранов от 1024px до 1280px */
-@media (max-width: 1279.98px) {
+@media (max-width: 1280px) {
     .Directions {
         .Directions__wrapper {
             width: 95%;
@@ -200,7 +200,7 @@
 }
 
 /* Адаптация для экранов от 768px до 1024px */
-@media (max-width: 1023.98px) {
+@media (max-width: 1024px) {
     .Directions {
         .Directions__wrapper {
             width: 100%;
@@ -214,8 +214,8 @@
     }
 }
 
-/* Адаптация для экранов от 414px до 768px */
-@media (max-width: 767.98px) {
+/* Адаптация для экранов от 576px до 768px */
+@media (max-width: 768px) {
     .Directions {
         // border: 1px solid red;
         .Directions__wrapper {
@@ -226,6 +226,7 @@
                     .Directions__title {
                         text-align: center;
                         font-size: 2rem;
+                        margin-bottom: 2rem;
                     }
                     .Directions__group {
                         .Directions__item {
@@ -269,6 +270,74 @@
                             background-color: var(--color-gold);
                             padding: 1rem 5rem;
                             font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 320px до 576px */
+@media (max-width: 768px) {
+    .Directions {
+        // border: 1px solid red;
+        margin-bottom: 2rem;
+        .Directions__wrapper {
+            width: 100%;
+            padding: 0 2rem;
+            .Directions__container {
+                .Directions__Content {
+                    .Directions__title {
+                        text-align: center;
+                        font-size: 1.5rem;
+                        margin-bottom: 1.25rem;
+                    }
+                    .Directions__group {
+                        margin-bottom: 1.5rem;
+                        .Directions__item {
+                            padding: 0.75rem 0;
+                            .Directions__external-content {
+                                .item-title {
+                                    font-size: 1rem;
+                                }
+                                .active-title {
+
+                                }
+                                .item-icon-wrapper {
+                                    .item-icon {
+
+                                    }
+                                    .active-icon {
+
+                                    }
+                                }
+                            }
+                            .Directions__internal-container {
+
+                            }
+                            .Directions__internal-content {
+                                .Directions__internal-item {
+                                    font-size: 1rem;
+                                }
+                            }
+                            .active {
+
+                            }
+                        }
+                    }
+                    .Directions__contact-us {
+                        flex-direction: column;
+                        padding: 1rem 2rem;
+                        .Directions__contact-descr {
+                            max-width: 100%;
+                            margin-bottom: 1rem;
+                            font-size: 0.875rem;
+                        }
+                        .Directions__btn-call {
+                            background-color: var(--color-gold);
+                            padding: 0.5rem 3rem;
+                            font-size: 0.875rem;
                         }
                     }
                 }

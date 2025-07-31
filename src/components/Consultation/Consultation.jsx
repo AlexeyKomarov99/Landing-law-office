@@ -70,7 +70,7 @@ const Consultation = () => {
               >Получить консультацию</button>
             </form>
             <span className="Consultation__privacy-policy">
-              Отправляя данные из этой формы, Вы соглашаюсь на обработку <br />
+              Отправляя данные из этой формы, Вы соглашаюсь на обработку
               персональных данных и с условиями <span style={{textDecoration: "underline"}}>политики конфиденциальности</span>
             </span>
           </div>

@@ -16,7 +16,7 @@ const Footer = () => {
                   д. 25, каб. 202 (2 этаж)
                 </h3>
                 <span className="Footer__metro-descr">Ближайшее к нашему офису метро:</span>
-                <span className="Footer_metro">
+                <span className="Footer__metro">
                   <span className="Footer__circle"></span>
                   <span className="Footer__metro-name">Молодежная, Кунцевская</span>
                 </span>

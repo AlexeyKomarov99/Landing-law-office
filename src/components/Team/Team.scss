@@ -83,7 +83,7 @@
 }
 
 /* Адаптация для экранов от 1440px до 1920px */
-@media (max-width: 1919.98px) {
+@media (max-width: 1920px) {
     .Team {
         .Team__wrapper {
             width: 90%;
@@ -92,7 +92,7 @@
 }
 
 /* Адаптация для экранов от 1366px до 1440px */
-@media (max-width: 1439.98px) {
+@media (max-width: 1440px) {
     .Team {
         .Team__wrapper {
             width: 90%;
@@ -101,7 +101,7 @@
 }
 
 /* Адаптация для экранов от 1280px до 1366px */
-@media (max-width: 1439.98px) {
+@media (max-width: 1366px) {
     .Team {
         .Team__wrapper {
             width: 90%;
@@ -140,7 +140,7 @@
 }
 
 /* Адаптация для экранов от 1024px до 1280px */
-@media (max-width: 1279.98px) {
+@media (max-width: 1280px) {
     .Team {
         .Team__wrapper {
             width: 95%;
@@ -149,7 +149,7 @@
 }
 
 /* Адаптация для экранов от 768px до 1024px */
-@media (max-width: 1023.98px) {
+@media (max-width: 1024px) {
     .Team {
         .Team__wrapper {
             width: 100%;
@@ -185,8 +185,45 @@
     }
 }
 
-/* Адаптация для экранов от 414px до 768px */
-@media (max-width: 1023.98px) {
+/* Адаптация для экранов от 576px до 768px */
+@media (max-width: 768px) {
+    .Team {
+        .Team__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Team__container {
+                .Team__content {
+                    .Team__title {
+                        font-size: 2rem;
+                        margin-bottom: 1.5rem;
+                    }
+                    .Team__group {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-gap: 0.5rem;
+                        .Team__item {
+                            .Team__photo-wrapper {
+                                width: 220px;
+                                height: 220px;
+                            }
+                            .Team__descr {
+                                .Team__name {
+                                    font-size: 1.5rem;
+                                }
+                                .Team__profession {
+                                    font-size: 1.125rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 320px до 576px */
+@media (max-width: 576px) {
     .Team {
         margin-bottom: 2rem;
         padding-top: 0;
@@ -196,7 +233,7 @@
             .Team__container {
                 .Team__content {
                     .Team__title {
-                        font-size: 2rem;
+                        font-size: 1.75rem;
                         margin-bottom: 1.5rem;
                     }
                     .Team__group {
@@ -216,10 +253,11 @@
                             }
                             .Team__descr {
                                 .Team__name {
-                                    font-size: 1.5rem;
+                                    font-size: 1.25rem;
                                 }
                                 .Team__profession {
                                     font-size: 1.125rem;
+                                    max-width: 250px;
                                 }
                             }
                         }

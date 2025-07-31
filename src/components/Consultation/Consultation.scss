@@ -23,10 +23,10 @@
                 .Consultation__title {
                     color: var(--color-gold);
                     margin-bottom: 2rem;
+                    font-size: 3.25rem;
                 }
                 .Consultation__form {
                     width: 100%;
-                    // max-width: 664px;
                     max-width: 41.5rem;
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
@@ -40,7 +40,7 @@
                         background-color: var(--color-middle-gray);
                         outline: 1px solid rgba(255, 255, 255, 0.32);
                         color: var(--color-light-gray);
-                        font-size: 1rem;
+                        font-size: 1.125rem;
                         cursor: pointer;
                         &:focus {
                             outline: 1px solid rgba(255, 255, 255, 0.32);
@@ -56,8 +56,177 @@
                 }
                 .Consultation__privacy-policy {
                     text-align: center;
-                    font-size: 0.78125rem;
+                    font-size: 1rem;
                     color: rgba(65, 65, 63, 1);
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 1440px до 1920px */
+@media (max-width: 1920px) {
+    .Consultation {
+        .Consultation__wrapper {
+            width: 90%;
+            .Consultation__container {
+                .Consultation__content {
+                    padding: 4.5rem 10rem;
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 1366px до 1440px */
+@media (max-width: 1440px) {
+    .Consultation {
+        .Consultation__wrapper {
+            width: 90%;
+        }
+    }
+}
+
+/* Адаптация для экранов от 1280px до 1366px */
+@media (max-width: 1366px) {
+    .Consultation {
+        .Consultation__wrapper {
+            width: 90%;
+            .Consultation__container {
+                .Consultation__content {
+                    padding: 3.5rem 10rem;
+                    .Consultation__title {
+                        font-size: 3.125rem;
+                    }
+                    .Consultation__form {
+                        .input-form {
+                            font-size: 1rem;
+                        }
+                        .input-form,
+                        .Consultation__btn-consultation {
+                            padding: 1.125rem 0.875rem;
+                        }
+                        .Consultation__btn-consultation {
+                            font-size: 1.125rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 1024px до 1280px */
+@media (max-width: 1280px) {
+    .Consultation {
+        .Consultation__wrapper {
+            width: 95%;
+            .Consultation__container {
+                .Consultation__content {
+                    padding: 3.125rem 10rem;
+                    .Consultation__title {
+                        text-align: center;
+                        font-size: 2.875rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 768px до 1024px */
+@media (max-width: 1024px) {
+    .Consultation {
+        .Consultation__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Consultation__container {
+                .Consultation__content {
+                    padding: 2.5rem 7rem;
+                    .Consultation__title {
+                        margin-bottom: 1rem;
+                        font-size: 2rem;
+                    }
+                    .Consultation__form {
+                        .input-form {
+                        }
+                        .Consultation__btn-consultation {
+                            font-size: 1rem;
+                        }
+                        .input-form,
+                        .Consultation__btn-consultation {
+                            padding: 1rem 0.75rem;
+                        }
+                    }
+                    .Consultation__privacy-policy {
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 576px до 768px */
+@media (max-width: 768px) {
+    .Consultation {
+        .Consultation__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Consultation__container {
+                .Consultation__content {
+                    padding: 2.5rem 5.5rem;
+                    .Consultation__title {
+                        margin-bottom: 1rem;
+                        font-size: 2rem;
+                    }
+                    .Consultation__form {
+                        grid-template-columns: repeat(1, 1fr);
+                        .input-form {
+                        }
+                        .Consultation__btn-consultation {
+                            font-size: 1rem;
+                        }
+                    }
+                    .Consultation__privacy-policy {
+                        font-size: 0.8125rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 320px до 576px */
+@media (max-width: 576px) {
+    .Consultation {
+        margin-bottom: 2rem;
+        .Consultation__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Consultation__container {
+                .Consultation__content {
+                    padding: 1.25rem 2.25rem;
+                    .Consultation__title {
+                        margin-bottom: 1rem;
+                        font-size: 1.75rem;
+                    }
+                    .Consultation__form {
+                        grid-template-columns: repeat(1, 1fr);
+                        .input-form {
+                            font-size: 0.875rem;
+                        }
+                        .Consultation__btn-consultation {
+                            font-size: 1rem;
+                        }
+                        .input-form,
+                        .Consultation__btn-consultation {
+                            padding: 0.5rem 0.75rem;
+                        }
+                    }
+                    .Consultation__privacy-policy {
+                        font-size: 0.8rem;
+                    }
                 }
             }
         }
