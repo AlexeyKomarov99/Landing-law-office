@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     user-select: none;
+    border: 0;
 }
 
 /* Основное начертание (normal) */

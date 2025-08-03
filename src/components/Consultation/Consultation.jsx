@@ -18,15 +18,29 @@ const Consultation = () => {
     }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
-    
-    setFormData({
-      name: '',
-      phone: '',
-      appeal: '',
-    })
+
+    try {
+      const response = await fetch('/api/sendToTelegram', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) throw new Error('Ошибка сети');
+      const result = await response.json();
+
+      if (result.success) {
+        alert('Заявка отправлена!');
+        setFormData({ name: '', phone: '', appeal: '' });
+      } else {
+        alert('Ошибка: ' + (result.error || 'Попробуйте позже'));
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Произошла ошибка при отправке!');
+    }
   };
 
   return (
