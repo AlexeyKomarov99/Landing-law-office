@@ -40,7 +40,8 @@
                         .Footer__metro-descr {
                             font-size: 1rem;
                             letter-spacing: -0.01em;
-                            color: rgba(104, 104, 103, 1);
+                            // color: rgba(104, 104, 103, 1);
+                            color: rgba(#B0B0B0, 0.6);
                         }
                         .Footer__metro {
                             display: flex;
@@ -85,12 +86,14 @@
                     .law-office {
                         font-size: 1rem;
                         letter-spacing: -0.01em;
-                        color: rgba(65, 65, 63, 1);
+                        // color: rgba(65, 65, 63, 1);
+                        color: rgba(#B0B0B0, 0.6);
                     }
                     .policy {
                         font-size: 1rem;
                         letter-spacing: -0.01em;
-                        color: rgba(65, 65, 63, 1);
+                        // color: rgba(65, 65, 63, 1);
+                        color: rgba(#B0B0B0, 0.6);
                     }
                 }
 
