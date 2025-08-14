@@ -17,13 +17,13 @@ const App = () => {
   return (
     <main className='App'>
       <Navbar />
-      <Banner />
+      <Banner id="main" />
       <Advantages />
-      <About />
-      <Directions />
+      <About id="about" />
+      <Directions id="services" />
       <Leader />
       <Team />
-      <Consultation />
+      <Consultation id="consultation" />
       <MapComponent />
       <Footer />
     </main>

@@ -4,7 +4,7 @@ import './Directions.scss';
 import { directionList } from './directionList';
 import { IoIosArrowDown as ArrowDownIcon } from "react-icons/io";
 
-const Directions = () => {
+const Directions = ({id}) => {
 
   const [activeSection, setActiveSection] = useState([]);
   const toggleActiveSection = (currentSection) => {
@@ -16,7 +16,7 @@ const Directions = () => {
   }
 
   return (
-    <section className='Directions'>
+    <section className='Directions' id={id}>
       <div className="Directions__wrapper">
         <div className="Directions__container">
           <div className="Directions__Content">

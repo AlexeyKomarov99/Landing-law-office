@@ -3,9 +3,9 @@ import React from 'react';
 import './About.scss';
 import AphroditePhoto from '../../assets/photos/Aphrodite.png';
 
-const About = () => {
+const About = ({id}) => {
   return (
-    <section className='About'>
+    <section className='About' id={id}>
       <div className="About__wrapper">
         <div className="About__container">
           <div className="About__Content">

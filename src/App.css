@@ -40,6 +40,10 @@
     --transition: all 0.3s ease-out
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   font-weight: normal;

@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import InputMask from 'react-input-mask';
 //===== assets =====//
 import './Consultation.scss';
 
-const Consultation = () => {
-
+const Consultation = ({ id }) => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -11,12 +11,12 @@ const Consultation = () => {
   });
 
   const handleFormChange = (e) => {
-    const {name, value} = e.target;
+    const { name, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
       [name]: value
-    }))
-  }
+    }));
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -44,7 +44,7 @@ const Consultation = () => {
   };
 
   return (
-    <section className='Consultation'>
+    <section className='Consultation' id={id}>
       <div className="Consultation__wrapper">
         <div className="Consultation__container">
           <div className="Consultation__content">
@@ -58,23 +58,25 @@ const Consultation = () => {
                 type="text"
                 name='name'
                 value={formData.name}
-                onChange={(e) => handleFormChange(e)}
+                onChange={handleFormChange}
                 className="Consultation__name input-form"
                 placeholder='Как вас зовут'
               />
-              <input 
+              <InputMask
+                mask="+7 (999) 999-99-99"
+                maskChar="_"
                 type="text"
                 name='phone'
                 value={formData.phone}
-                onChange={(e) => handleFormChange(e)}
+                onChange={handleFormChange}
                 className="Consultation__phone input-form"
-                placeholder='Контактный номер'
+                placeholder='+7 (___) ___-__-__'
               />
               <input 
                 type="text"
                 name='appeal'
                 value={formData.appeal}
-                onChange={(e) => handleFormChange(e)}
+                onChange={handleFormChange}
                 className="Consultation__appeal input-form"
                 placeholder='Тема обращения'
               />
@@ -91,7 +93,7 @@ const Consultation = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Consultation;
