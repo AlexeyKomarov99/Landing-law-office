@@ -23,7 +23,7 @@ const Footer = () => {
               </div>
 
               <div className="content-right">
-                <h3 className="Footer__phone">+ 7 (495) 730 63 06</h3>
+                <h3 className="Footer__phone">+ 7 (967) 061-23-35</h3>
                 <h3 className="Footer__email">bvmuzychenko@mail.ru</h3>
               </div>
 
