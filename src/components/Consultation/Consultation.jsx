@@ -22,7 +22,7 @@ const Consultation = ({ id }) => {
     e.preventDefault();
 
     try {
-      const response = await fetch('/api/sendToTelegram', {
+      const response = await fetch('/api/sendToTelegram.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
