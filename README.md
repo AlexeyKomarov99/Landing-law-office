@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+# Юридическое бюро "Музыченко и партнеры" - Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Баннер сайта](/public/images/law-office-banner.png)
 
-## Available Scripts
+## 🪙 Демо
 
-In the project directory, you can run:
+[**Посмотреть живую версию сайта →**](https://muzychenko-law-office.ru)
 
-### `npm start`
+## 💼 О проекте
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Современный и адаптивный сайт-визитка, посвященный юридической компании/бюро **"Музыченко и партнеры"**. Проект создает профессиональный имидж, демонстрирует экспертизу и предоставляет клиентам простой и удобный способ обратиться за юридической помощью. Лендинг знакомит посетителей с командой бюро, основными направлениями практики и преимуществами сотрудничества.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎯 Цель проекта
 
-### `npm test`
+Этот сайт-визитка был создан как демонстрация профессиональных навыков в разработке на **React** и написание функционала по получению обратной связи от клиентов через Telegram-бота.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Ключевые цели:**
+*   Разработать <u>**полностью адаптивный**</u> интерфейс, корректно отображающийся на всех устройствах.
+*   Обеспечить <u>**кроссбраузерную совместимость**</u> для широкого охвата аудитории.
+*   Создать интуитивно понятный и визуально привлекательный сайт с использованием <u>**актуального стека технологий**</u>.
+*   Реализовать механизм отправки данных из форм через Telegram-бота для <u>**мгновенного получения заявок от клиентов**</u>.
 
-### `npm run build`
+## ✨ Особенности
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*   **📱 Адаптивный дизайн:** Идеальное отображение на мониторах, планшетах и смартфонах. Использование mobile-first подхода и flexbox/grid сеток.
+*   **🌐 Кроссбраузерность:** Сайт корректно работает в современных версиях Chrome, Firefox, Safari и Edge.
+*   **🎨 Стилизация на SASS/SCSS:** Использование переменных, миксинов и вложенностей для чистого, поддерживаемого и мощного CSS.
+*   **🤖 Интеграция с Telegram:** Настроен серверный функционал (API route) для мгновенной отправки данных из форм заявок прямо в чат Telegram-бота, что ускоряет реакцию на лиды.
+*   **⚛️ Компонентная архитектура:** Приложение разбито на переиспользуемые React-компоненты, что облегчает поддержку и масштабирование кода.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠 Технологический стек
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Технология | Бейдж | Описание |
+| :--- | :--- | :--- |
+| **HTML** | [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/ru/docs/Web/HTML) | Структура и семантика веб-страниц |
+| **CSS / SASS** | [![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)](https://sass-lang.com/) | Стилизация и препроцессинг |
+| **JavaScript** | [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/ru/docs/Web/JavaScript) | Логика и интерактивность |
+| **React** | [![React](https://img.shields.io/badge/React-19.x-61dafb?logo=react&style=for-the-badge)](https://react.dev/) | Библиотека для построения пользовательских интерфейсов |
 
-### `npm run eject`
+## ⚙️ Структура проекта
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+law-office-landing/
+├── api/ # Serverless Functions (Vercel)
+│ └── sendToTelegram.js # Эндпоинт для отправки в Telegram
+├── public/ # Статические файлы
+│ ├── fonts/ # Кастомные шрифты
+│ ├── icons/ # Иконки, фавиконки
+│ ├── images/ # Все изображения проекта
+│ └── index.html # Главный HTML-файл
+├── src/ # Исходный код приложения
+│ ├── assets/ # Вспомогательные ресурсы
+│ │ ├── background/ # Фоновые изображения
+│ │ ├── icons/ # SVG-иконки для компонентов
+│ │ └── photos/ # Фотографии команды и лидера
+│ ├── components/ # React-компоненты
+│ │ ├── About/ # Комponent "О бюро"
+│ │ ├── Advantages/ # Компонент "Преимущества"
+│ │ ├── Banner/ # Главный баннер (hero section)
+│ │ ├── Consultation/ # Форма для консультации
+│ │ ├── Direction/ # Направления деятельности
+│ │ ├── Footer/ # Подвал сайта
+│ │ ├── Leader/ # Блок об управляющем партнере
+│ │ ├── MapComponent/ # Интерактивная карта
+│ │ ├── Navbar/ # Навигационное меню
+│ │ └── Team/ # Блок "Команда"
+│ ├── App.css # Глобальные стили
+│ ├── App.js # Корневой компонент приложения
+│ └── index.js # Точка входа в приложение
+├── package.json
+└── README.md
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🚀 Как запустить проект локально
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Этот проект создан с помощью `Create React App`. Чтобы запустить его локально на вашем компьютере, выполните следующие шаги:
 
-## Learn More
+### Предварительные требования
+Убедитесь, что на вашем компьютере установлен **Node.js** (версия 18 или выше) и менеджер пакетов **npm**.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Пошаговая инструкция
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1.  **Клонируйте репозиторий:**
+    ```bash
+    git clone https://github.com/AlexeyKomarov99/Landing-law-office.git
+    ```
 
-### Code Splitting
+2.  **Перейдите в директорию проекта:**
+    ```bash
+    cd Landing-law-office
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3.  **Установите зависимости:**
+    ```bash
+    npm install
+    ```
 
-### Analyzing the Bundle Size
+4.  **Запустите сервер для разработки:**
+    ```bash
+    npm start
+    ```
+    После выполнения этой команды запустится development-сервер. Страница автоматически откроется в браузере по адресу [http://localhost:3000](http://localhost:3000).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+5.  **Для работы формы обратной связи:**
+    *   Создайте файл `.env` в корне проекта по примеру `.env.example`.
+    *   Заполните переменные `REACT_APP_TELEGRAM_BOT_TOKEN` и `REACT_APP_TELEGRAM_CHAT_ID` своими данными.
+    
+---
 
-### Making a Progressive Web App
+### Другие полезные команды
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+| Команда | Описание |
+| :--- | :--- |
+| `npm run build` | Создает оптимизированную production-сборку в папке `build`. |
+| `npm test` | Запускает тестовый раннер в интерактивном режиме. |
+| `npm run eject` | **Необратимая операция.** Извлекает конфигурационные файлы из `create-react-app` для полного контроля. |
+| `npm run lint` | Запускает линтер для проверки кода (если настроен). |
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
