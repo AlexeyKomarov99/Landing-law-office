@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import InputMask from 'react-input-mask';
 //===== assets =====//
 import './Consultation.scss';
@@ -87,7 +88,7 @@ const Consultation = ({ id }) => {
             </form>
             <span className="Consultation__privacy-policy">
               Отправляя данные из этой формы, Вы соглашаюсь на обработку
-              персональных данных и с условиями <span style={{textDecoration: "underline"}}>политики конфиденциальности</span>
+              персональных данных и с условиями <Link to={'/privacy-policy'} className='privacy-policy' style={{textDecoration: "underline"}}>политики конфиденциальности</Link>
             </span>
           </div>
         </div>

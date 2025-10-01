@@ -1,7 +1,8 @@
 import React from 'react';
 //===== assets =====//
 import './Banner.scss';
-import Leader from '../../assets/photos/upscalemedia-transformed.png';
+import MainPhoto from '../../assets/photos/main-photo.png';
+
 
 const Banner = ({id}) => {
   
@@ -39,7 +40,7 @@ const Banner = ({id}) => {
             <div className="content-right">
               <div className="main-img-wrapper">
                 <img 
-                  src={Leader} 
+                  src={MainPhoto} 
                   alt="Главное фото"
                   className='main-img' 
                 />

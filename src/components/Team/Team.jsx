@@ -1,12 +1,12 @@
 import React from 'react';
 //===== assets =====//
 import './Team.scss';
-import BogdanPhoto from '../../assets/photos/Bogdan.png';
+import BogdanPhoto from '../../assets/photos/Bogdan.jpg';
 import { ReactComponent as ShieldIcon } from '../../assets/icons/security.svg';
 
 const teamList = [
-  {id: 1, name: 'Музыченко Святослав Вячеславович', profession: 'адвокат', photo: <ShieldIcon style={{width:'126px', height: '126px'}} className='Team__icon' />},
-  {id: 2, name: 'Музыченко Богдан Вячеславович', profession: 'профессиональный юрист, член ассоциации юристов России', photo: <img className='Team__photo' src={BogdanPhoto} alt='Юрист' />},
+  {id: 1, name: 'Музыченко Святослав Вячеславович', profession: 'адвокат Московской коллегии адвокатов “Защита"', photo: <ShieldIcon style={{width:'126px', height: '126px'}} className='Team__icon' />},
+  {id: 2, name: 'Музыченко Богдан Вячеславович', profession: 'профессиональный ведущий юрист, член ассоциации юристов России', photo: <img className='Team__photo' src={BogdanPhoto} alt='Юрист' />},
 ]
 
 const Team = () => {

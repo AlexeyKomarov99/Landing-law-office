@@ -16,7 +16,7 @@ const Advantages = () => {
               <div className="advantage-icon-wrapper">
                 <span className="advantage-icon"><CupIcon /></span>
               </div>
-              <span className="advantage-descr">более 100 <br /> выигранных дел</span>
+              <span className="advantage-descr">более 1000 <br /> выигранных дел</span>
             </div>
 
             <div className="content-item">

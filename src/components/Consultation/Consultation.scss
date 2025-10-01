@@ -57,8 +57,15 @@
                 .Consultation__privacy-policy {
                     text-align: center;
                     font-size: 1rem;
-                    // color: rgba(65, 65, 63, 1);
                     color: rgba(#B0B0B0, 0.6);
+                    .privacy-policy {
+                        color: var(--color-white);
+                        transition: var(--transition);
+                        cursor: pointer;
+                        &:hover {
+                            color: var(--color-gold);
+                        }
+                    }
                 }
             }
         }

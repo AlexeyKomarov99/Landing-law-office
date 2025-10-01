@@ -23,7 +23,9 @@
                 }
                 .Team__group {
                     height: 100%;
-                    display: flex;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 2rem;
                     align-items: stretch;
                     .Team__item {
                         width: 100%;
@@ -49,7 +51,7 @@
                                 width: 100%;
                                 height: 100%;
                                 object-fit: cover;
-                                object-position: center top;
+                                object-position: center 60%;
                             }
                             .Team__icon {
                                 width: 100%;
@@ -65,14 +67,12 @@
                             align-items: center;
                             text-align: center;
                             margin-top: -35px;
-                            // border: 1px solid green;
                             .Team__name {
                                 font-size: 2rem;
                                 margin-bottom: 0.5rem;
                             }
                             .Team__profession {
                                 color: var(--color-light-gray);
-
                             }
                         }
                     }

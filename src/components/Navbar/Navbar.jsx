@@ -78,8 +78,20 @@ const Navbar = () => {
                   </div>
 
                   <div className="Navbar__phone-group">
-                    <span className="Navbar__phone">+7 (967) 061-23-35</span>
-                    <span className="Navbar__work-schedule">по будням с 9:00-19:00</span>
+                    <div className="Navbar__descr">
+                      <span className="Navbar__work-schedule">по будням с 10:00-18:00</span>
+                      <span className="Navbar__work-schedule-weekends">в субботу - по записи</span>
+                    </div>
+                    <div className="Navbar__phones">
+                      <div className="Navbar__phones-primary">
+                        <span className="Navbar__phone">+7 (967) 061-23-35</span>
+                        <span className="Navbar__phone">+7 (495) 730-63-06</span>
+                      </div>
+                      <div className="Navbar__phones-backup">
+                        <span className="Navbar__phone">+7 (995) 920-14-35</span>
+                        <span className='Navbar__phone phone-descr' style={{color: 'white', opacity:'0.56'}}>дежурный адвокат</span>
+                      </div>
+                    </div>
                   </div>
 
                 </div>
@@ -95,10 +107,22 @@ const Navbar = () => {
                     className="Navbar__img" 
                   />
                 </div>
-
+                
                 <div className="Navbar__phone-group">
-                  <span className="Navbar__phone">+7 (495) 730 63 06</span>
-                  <span className="Navbar__work-schedule">по будням с 9:00-19:00</span>
+                  <div className="Navbar__phones">
+                    <div className="Navbar__phones-primary">
+                      <span className="Navbar__phone">+7 (967) 061-23-35</span>
+                      <span className="Navbar__phone">+7 (495) 730-63-06</span>
+                    </div>
+                    <div className="Navbar__phones-backup">
+                      <span className="Navbar__phone">+7 (995) 920-14-35</span>
+                      <span className='Navbar__phone phone-descr' style={{color: 'white', opacity:'0.56'}}>дежурный адвокат</span>
+                    </div>
+                  </div>
+                  <div className="Navbar__descr">
+                    <span className="Navbar__work-schedule">по будням с 10:00-18:00</span>
+                    <span className="Navbar__work-schedule-weekends">в субботу - по записи</span>
+                  </div>
                 </div>
 
                 <div 

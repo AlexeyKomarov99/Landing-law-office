@@ -15,6 +15,10 @@ const Directions = ({id}) => {
     );
   }
 
+  const handleCall = () => {
+    window.location.href = 'tel:+79959201435';
+  }
+
   return (
     <section className='Directions' id={id}>
       <div className="Directions__wrapper">
@@ -52,7 +56,12 @@ const Directions = ({id}) => {
                 направления, свяжитесь <br />
                 с нами и мы подскажем
               </div>
-              <button className="Directions__btn-call">Позвонить</button>
+              <button 
+                className="Directions__btn-call"
+                onClick={handleCall}
+              >
+                Позвонить
+              </button>
             </div>
           </div>
         </div>

@@ -61,18 +61,51 @@
                         }
                         .Navbar__phone-group {
                             display: flex;
-                            flex-direction: column;
-                            justify-content: end;
-                            align-items: end;
-                            .Navbar__phone {
-                                font-size: 1.125rem;
-                                letter-spacing: -0.01em;
-                                color: var(--color-gold);
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            gap: 1.2rem;
+                            .Navbar__descr {
+                                display: flex;
+                                flex-direction: column;
+                                .Navbar__work-schedule,
+                                .Navbar__work-schedule-weekends {
+                                    font-size: 0.875rem;
+                                    letter-spacing: -0.01em;
+                                    color: rgba(255, 255, 255, 0.56);
+                                }
                             }
-                            .Navbar__work-schedule {
-                                font-size: 1rem;
-                                letter-spacing: -0.01em;
-                                color: rgba(255, 255, 255, 0.56);
+
+                            .Navbar__phones {
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                gap: 1.2rem;
+                                .Navbar__phones-primary {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 0.25rem;
+                                    .Navbar__phone {
+                                        font-size: 0.875rem;
+                                        letter-spacing: -0.01em;
+                                        color: var(--color-gold);
+                                    }
+                                }
+                                .Navbar__phones-backup {
+                                    display: flex;
+                                    flex-direction: column;
+                                    // gap: 0.25rem;
+                                    .Navbar__phone {
+                                        font-size: 0.875rem;
+                                        letter-spacing: -0.01em;
+                                        color: var(--color-gold);
+                                    }
+                                    .phone-descr {
+                                        font-size: 0.75rem;
+                                        display: flex;
+                                        align-items: flex-end;
+                                        justify-content: flex-end;
+                                    }
+                                }
                             }
                         }
                     }
@@ -137,12 +170,38 @@
                                     font-size: 1rem;
                                 }
                             }
+
                             .Navbar__phone-group {
-                                .Navbar__phone {
-                                    font-size: 0.875rem;
+                                .Navbar__descr {
+                                    .Navbar__work-schedule,
+                                    .Navbar__work-schedule-weekends {
+                                        font-size: 0.75rem;
+                                    }
                                 }
-                                .Navbar__work-schedule {
-                                    font-size: 0.75rem;
+
+                                .Navbar__phones {
+                                    .Navbar__phones-primary {
+                                        .Navbar__phone {
+                                            font-size: 0.75rem;
+                                            letter-spacing: -0.01em;
+                                            color: var(--color-gold);
+                                        }
+                                    }
+                                    .Navbar__phones-backup {
+                                        display: flex;
+                                        flex-direction: column;
+                                        .Navbar__phone {
+                                            font-size: 0.75rem;
+                                            letter-spacing: -0.01em;
+                                            color: var(--color-gold);
+                                        }
+                                        .phone-descr {
+                                            font-size: 0.625rem;
+                                            display: flex;
+                                            align-items: flex-end;
+                                            justify-content: flex-end;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -195,24 +254,58 @@
                                 width: 100%;
                                 height: 100%;
                             }
-                        } 
+                        }
+
                         .Navbar__phone-group {
                             display: flex;
                             flex-direction: column;
-                            justify-content: start;
-                            align-items: flex-end;
-                            gap: 2px;
-                            .Navbar__phone {
-                                font-size: 1rem;
-                                letter-spacing: -0.01em;
-                                color: var(--color-gold);
+                            justify-content: center;
+                            align-items: center;
+                            gap: 0.5rem;
+                            .Navbar__descr {
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                gap: 1rem;
+                                .Navbar__work-schedule,
+                                .Navbar__work-schedule-weekends {
+                                    font-size: 0.825rem;
+                                    letter-spacing: -0.01em;
+                                    color: rgba(255, 255, 255, 0.56);
+                                }
                             }
-                            .Navbar__work-schedule {
-                                letter-spacing: -0.01em;
-                                color: rgba(255, 255, 255, 0.56);
-                                font-size: 0.875rem;
+
+                            .Navbar__phones {
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                gap: 1.2rem;
+                                .Navbar__phones-primary {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 0.25rem;
+                                    .Navbar__phone {
+                                        font-size: 0.825rem;
+                                        letter-spacing: -0.01em;
+                                        color: var(--color-gold);
+                                    }
+                                }
+                                .Navbar__phones-backup {
+                                    display: flex;
+                                    flex-direction: column;
+                                    .Navbar__phone {
+                                        font-size: 0.825rem;
+                                        letter-spacing: -0.01em;
+                                        color: var(--color-gold);
+                                    }
+                                    .phone-descr {
+                                        font-size: 0.75rem;
+                                        display: flex;
+                                        align-items: flex-end;
+                                        justify-content: flex-end;
+                                    }
+                                }
                             }
                         }
+
                         .Navbar__burger {
                             width: 48px;
                             height: 48px;
@@ -245,8 +338,8 @@
 
                             z-index: 2000;
                             background-color: var(--color-dark-gray);
-                            color: rgba(#B0B0B0, 0.6);
-                            border: 1px solid rgba(#B0B0B0, 0.6);
+                            color: rgba(255,255,255, 0.8);
+                            border: 1px solid rgba(255,255,255, 0.5);
 
                             width: 35vw;
                             opacity: 0;
@@ -278,7 +371,7 @@
                                 transition: color 0.3s ease-out;
                                 cursor: pointer;
                                 &:hover {
-                                    color: var(--color-white);
+                                    color: rgba(255,255,255, 0.8);
                                 }
                                 .Navbar__cross-icon {
 
@@ -323,28 +416,62 @@
                         justify-content: space-between;
                         align-items: center;
                         .Navbar__img-wrapper {
-                            width: 48px;
-                            height: 48px;
+                            width: 42px;
+                            height: 42px;
                             .Navbar__img {
                                 width: 100%;
                                 height: 100%;
                             }
-                        } 
+                        }
+
                         .Navbar__phone-group {
-                            .Navbar__phone {
-                                font-size: 1.25rem;
-                                letter-spacing: -0.01em;
-                                color: var(--color-gold);
+                            .Navbar__descr {
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                gap: 1rem;
+                                .Navbar__work-schedule,
+                                .Navbar__work-schedule-weekends {
+                                    font-size: 0.75rem;
+                                    letter-spacing: -0.01em;
+                                    color: rgba(255, 255, 255, 0.56);
+                                }
                             }
-                            .Navbar__work-schedule {
-                                font-size: 1.125rem;
-                                letter-spacing: -0.01em;
-                                color: rgba(255, 255, 255, 0.56);
+
+                            .Navbar__phones {
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                gap: 1.2rem;
+                                .Navbar__phones-primary {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 0.25rem;
+                                    .Navbar__phone {
+                                        font-size: 0.75rem;
+                                        letter-spacing: -0.01em;
+                                        color: var(--color-gold);
+                                    }
+                                }
+                                .Navbar__phones-backup {
+                                    display: flex;
+                                    flex-direction: column;
+                                    .Navbar__phone {
+                                        font-size: 0.75rem;
+                                        letter-spacing: -0.01em;
+                                        color: var(--color-gold);
+                                    }
+                                    .phone-descr {
+                                        font-size: 0.6rem;
+                                        display: flex;
+                                        align-items: flex-end;
+                                        justify-content: flex-end;
+                                    }
+                                }
                             }
                         }
+
                         .Navbar__burger {
-                            width: 56px;
-                            height: 56px;
+                            width: 42px;
+                            height: 42px;
                             border: 1px solid var(--color-white);
                             border-radius: 1000px;
                             cursor: pointer;
@@ -354,7 +481,7 @@
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                                font-size: 0.875rem;
+                                font-size: 0.75rem;
                                 font-weight: 400;
                             }
                         }
@@ -394,28 +521,66 @@
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
-                        align-items: center;
+                        align-items: flex-start;
                         .Navbar__img-wrapper {
-                            width: 36px;
-                            height: 36px;
+                            width: 30px;
+                            height: 30px;
                             .Navbar__img {
                                 width: 100%;
                                 height: 100%;
                             }
-                        } 
+                        }
+
                         .Navbar__phone-group {
-                            .Navbar__phone {
-                                font-size: 0.9rem;
-                                letter-spacing: -0.01em;
-                                color: var(--color-gold);
+                            gap: 0.25rem;
+                            .Navbar__descr {
+                                display: grid;
+                                grid-template-columns: repeat(2,1fr);
+                                gap: 0.5rem;
+                                .Navbar__work-schedule,
+                                .Navbar__work-schedule-weekends {
+                                    font-size: 0.5rem;
+                                    letter-spacing: -0.01em;
+                                    color: rgba(255, 255, 255, 0.56);
+                                }
                             }
-                            .Navbar__work-schedule {
-                                font-size: 0.8rem;
+
+                            .Navbar__phones {
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                gap: 0.5rem;
+                                .Navbar__phones-primary {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 0.25rem;
+                                    .Navbar__phone {
+                                        font-size: 0.625rem;
+                                        letter-spacing: -0.01em;
+                                        color: var(--color-gold);
+                                    }
+                                }
+                                .Navbar__phones-backup {
+                                    display: flex;
+                                    flex-direction: column;
+                                    .Navbar__phone {
+                                        font-size: 0.625rem;
+                                        letter-spacing: -0.01em;
+                                        color: var(--color-gold);
+                                    }
+                                    .phone-descr {
+                                        font-size: 0.5rem;
+                                        display: flex;
+                                        align-items: flex-end;
+                                        justify-content: flex-end;
+                                    }
+                                }
                             }
                         }
+
+
                         .Navbar__burger {
-                            width: 38px;
-                            height: 38px;
+                            width: 36px;
+                            height: 36px;
                             border: 1px solid var(--color-white);
                             border-radius: 1000px;
                             cursor: pointer;
@@ -425,7 +590,7 @@
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                                font-size: 0.65rem;
+                                font-size: 0.5rem;
                                 font-weight: 400;
                             }
                         }
