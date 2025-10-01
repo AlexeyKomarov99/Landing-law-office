@@ -116,7 +116,7 @@ const Navbar = () => {
                     </div>
                     <div className="Navbar__phones-backup">
                       <span className="Navbar__phone">+7 (995) 920-14-35</span>
-                      <span className='Navbar__phone phone-descr' style={{color: 'white', opacity:'0.56'}}>дежурный адвокат</span>
+                      <span className='Navbar__phone phone-descr' style={{color: 'white', opacity:'0.8'}}>дежурный адвокат</span>
                     </div>
                   </div>
                   <div className="Navbar__descr">

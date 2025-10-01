@@ -268,9 +268,9 @@
                                 gap: 1rem;
                                 .Navbar__work-schedule,
                                 .Navbar__work-schedule-weekends {
-                                    font-size: 0.825rem;
+                                    font-size: 1rem;
                                     letter-spacing: -0.01em;
-                                    color: rgba(255, 255, 255, 0.56);
+                                    color: rgba(255, 255, 255, 0.8);
                                 }
                             }
 
@@ -283,7 +283,7 @@
                                     flex-direction: column;
                                     gap: 0.25rem;
                                     .Navbar__phone {
-                                        font-size: 0.825rem;
+                                        font-size: 1.125rem;
                                         letter-spacing: -0.01em;
                                         color: var(--color-gold);
                                     }
@@ -292,12 +292,12 @@
                                     display: flex;
                                     flex-direction: column;
                                     .Navbar__phone {
-                                        font-size: 0.825rem;
+                                        font-size: 1.125rem;
                                         letter-spacing: -0.01em;
                                         color: var(--color-gold);
                                     }
                                     .phone-descr {
-                                        font-size: 0.75rem;
+                                        font-size: 0.875rem;
                                         display: flex;
                                         align-items: flex-end;
                                         justify-content: flex-end;
@@ -339,7 +339,7 @@
                             z-index: 2000;
                             background-color: var(--color-dark-gray);
                             color: rgba(255,255,255, 0.8);
-                            border: 1px solid rgba(255,255,255, 0.5);
+                            border: 1px solid rgba(255,255,255, 0.8);
 
                             width: 35vw;
                             opacity: 0;
@@ -433,20 +433,19 @@
                                 .Navbar__work-schedule-weekends {
                                     font-size: 0.75rem;
                                     letter-spacing: -0.01em;
-                                    color: rgba(255, 255, 255, 0.56);
                                 }
                             }
 
                             .Navbar__phones {
                                 display: grid;
                                 grid-template-columns: repeat(2, 1fr);
-                                gap: 1.2rem;
+                                gap: 1rem;
                                 .Navbar__phones-primary {
                                     display: flex;
                                     flex-direction: column;
                                     gap: 0.25rem;
                                     .Navbar__phone {
-                                        font-size: 0.75rem;
+                                        font-size: 0.9rem;
                                         letter-spacing: -0.01em;
                                         color: var(--color-gold);
                                     }
@@ -455,12 +454,12 @@
                                     display: flex;
                                     flex-direction: column;
                                     .Navbar__phone {
-                                        font-size: 0.75rem;
+                                        font-size: 0.9rem;
                                         letter-spacing: -0.01em;
                                         color: var(--color-gold);
                                     }
                                     .phone-descr {
-                                        font-size: 0.6rem;
+                                        font-size: 0.75rem;
                                         display: flex;
                                         align-items: flex-end;
                                         justify-content: flex-end;
@@ -541,20 +540,19 @@
                                 .Navbar__work-schedule-weekends {
                                     font-size: 0.5rem;
                                     letter-spacing: -0.01em;
-                                    color: rgba(255, 255, 255, 0.56);
                                 }
                             }
 
                             .Navbar__phones {
                                 display: grid;
                                 grid-template-columns: repeat(2, 1fr);
-                                gap: 0.5rem;
+                                gap: 0.25rem;
                                 .Navbar__phones-primary {
                                     display: flex;
                                     flex-direction: column;
                                     gap: 0.25rem;
                                     .Navbar__phone {
-                                        font-size: 0.625rem;
+                                        font-size: 0.65rem;
                                         letter-spacing: -0.01em;
                                         color: var(--color-gold);
                                     }
@@ -563,12 +561,12 @@
                                     display: flex;
                                     flex-direction: column;
                                     .Navbar__phone {
-                                        font-size: 0.625rem;
+                                        font-size: 0.65rem;
                                         letter-spacing: -0.01em;
                                         color: var(--color-gold);
                                     }
                                     .phone-descr {
-                                        font-size: 0.5rem;
+                                        font-size: 0.55rem;
                                         display: flex;
                                         align-items: flex-end;
                                         justify-content: flex-end;
@@ -579,8 +577,8 @@
 
 
                         .Navbar__burger {
-                            width: 36px;
-                            height: 36px;
+                            width: 30px;
+                            height: 30px;
                             border: 1px solid var(--color-white);
                             border-radius: 1000px;
                             cursor: pointer;
